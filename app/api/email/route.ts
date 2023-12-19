@@ -29,14 +29,14 @@ export async function GET(req: Request) {
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-        user: 'ashikmia557@gmail.com',
+        user: 'email@gmail.com',
         pass: process.env.APP_PASSWORD,
       },
     });
 
     // Define the email options
     const mailOptions = {
-      from: 'ashikmia557@gmail.com',
+      from: 'email@gmail.com',
       to,
       subject,
       html,
